@@ -1,0 +1,32 @@
+### Hello World
+GET http://localhost:3000
+
+### Users
+GET http://localhost:3000/users
+
+### Contact by ID
+GET http://localhost:3000/users/66f1f2b0229f3bff56b01707
+
+### Hello World
+GET https://project1-x6rx.onrender.com
+
+### Users
+GET https://project1-x6rx.onrender.com/users
+
+### Contact by ID from Render
+GET https://project1-x6rx.onrender.com/users/66f1f1fc229f3bff56b01706
+
+### Create Contact
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Mary",
+    "lastName": "Smith",
+    "email": "mary.smith22@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "9/22/96"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/users/66f1f33b229f3bff56b0170a HTTP/1.1
