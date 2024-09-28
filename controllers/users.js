@@ -26,7 +26,7 @@ const createUser = async (req, res) => {
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    const response = await mongodb.getDatabase()
+    const response = await mongodb.getDatabase().db().collection('users').insertOne(user);
     if (response.acknowledged) {
         res.status(200).send();
     } else {
