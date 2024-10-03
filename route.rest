@@ -10,6 +10,44 @@ GET http://localhost:3000/users/66f1f2b0229f3bff56b01707
 ### Hello World
 GET https://project1-x6rx.onrender.com
 
+
+
+### Users
+GET http://localhost:3000/users
+
+### Contact by ID from Render
+GET http://localhost:3000/users/66f1f1fc229f3bff56b01706
+
+### Update user
+PUT http://localhost:3000/users/66f1f1fc229f3bff56b01706
+Content-Type: application/application/json
+
+{
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith82@gmail.com",
+    "favoriteColor": "green",
+    "birthday": "6/23/72"
+}
+
+### Create Contact
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "test",
+    "lastName": "test",
+    "email": "test.test55@gmail.com",
+    "favoriteColor": "test",
+    "birthday": "test"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/users/66f8ba74c2461c3a75a676a9 HTTP/1.1
+
+
+
+
 ### Users
 GET https://project1-x6rx.onrender.com/users
 
@@ -33,12 +71,12 @@ POST https://project1-x6rx.onrender.com/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "email": "jane.doe55@gmail.com",
-    "favoriteColor": "blue",
-    "birthday": "3/28/89"
+    "firstName": "test",
+    "lastName": "test",
+    "email": "test.test55@gmail.com",
+    "favoriteColor": "test",
+    "birthday": "test"
 }
 
 ### Delete Contact
-DELETE http://localhost:3000/users/66f8ba74c2461c3a75a676a9 HTTP/1.1
+DELETE https://project1-x6rx.onrender.com/users/66f8ba74c2461c3a75a676a9 HTTP/1.1
